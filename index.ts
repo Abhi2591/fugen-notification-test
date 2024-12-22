@@ -8,7 +8,7 @@ const PORT = 3000;
 
 const serviceAccountPath = path.resolve(__dirname, 'noty-e846b-firebase-adminsdk-0uws7-0c4e667af9.json');
 admin.initializeApp({
-  credential: admin.credential.cert(require(serviceAccountPath)),
+  credential: admin.credential.cert(require('./noty-e846b-firebase-adminsdk-0uws7-ec7f6e436f.json')),
 });
 
 const fcmTokens: string[] = [];
