@@ -6,9 +6,9 @@ const app = express();
 app.use(express.json());
 const PORT = 3000;
 
-const serviceAccountPath = path.resolve(__dirname, 'noty-e846b-firebase-adminsdk-0uws7-0c4e667af9.json');
+// const serviceAccountPath = path.resolve(__dirname, 'noty-e846b-firebase-adminsdk-0uws7-0c4e667af9.json');
 admin.initializeApp({
-  credential: admin.credential.cert(require('./noty-e846b-firebase-adminsdk-0uws7-ec7f6e436f.json')),
+  credential: admin.credential.cert(require('./noty-e846b-firebase-adminsdk-0uws7-47854f3f49.json')),
 });
 
 const fcmTokens: string[] = [];
